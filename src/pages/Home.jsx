@@ -1,6 +1,7 @@
 import darkShape from "../images/darkShape.svg";
 import lightShape from "../images/lightShape.svg";
 import Theme from "../components/Theme";
+import Button from "../components/ui/Button";
 
 function Home({ darkTheme, toggleTheme }) {
   return (
@@ -16,9 +17,9 @@ function Home({ darkTheme, toggleTheme }) {
           <p className='dark:text-gray-50 font-nunito mb-16 text-gray-500'>
             Front-end Reactjs Developer
           </p>
-          <button className='focus:outline-none text-main rounded-3xl px-8 py-3 text-2xl bg-light-theme shadow-light-theme active:shadow-light-inset dark:bg-dark-theme dark:shadow-dark-theme font-medium dark:active:shadow-dark-inset'>
+          <Button rounded='rounded-3xl' className='text-main'>
             View Projects
-          </button>
+          </Button>
         </div>
         <div className='home-img'>
           <img
@@ -27,7 +28,7 @@ function Home({ darkTheme, toggleTheme }) {
           />
         </div>
       </div>
-      <div className='absolute bottom-6 left-1/2 transform -translate-x-1/2'>
+      <div className='cursor-pointer absolute bottom-6 left-1/2 transform -translate-x-1/2'>
         <span className='h-16 w-10 block rounded-3xl bg-light-theme flex items-center justify-center shadow-light-inset dark:bg-dark-theme dark:shadow-dark-inset'>
           <span className='rounded-full w-4 h-4 bg-main block animate-bounce'></span>
         </span>
