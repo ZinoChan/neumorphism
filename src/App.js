@@ -10,10 +10,8 @@ function App() {
   //   setDarkTheme(!darkTheme);
   // };
   return (
-    <main className='min-h-screen min-w-screen bg-light-theme dark:bg-dark-theme transition-all duration-150'>
-      <div className='max-w-screen-2xl mx-auto px-6 min-h-screen'>
-        <AppRoute darkTheme={darkTheme} />
-      </div>
+    <main className='overflow-x-hidden min-h-screen min-w-screen bg-light-theme dark:bg-dark-theme transition-all duration-150'>
+      <AppRoute darkTheme={darkTheme} />
     </main>
   );
 }
