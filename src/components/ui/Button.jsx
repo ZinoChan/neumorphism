@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const Button = ({
   children,
   rounded = "rounded",
@@ -5,9 +7,15 @@ const Button = ({
   className = "",
   inset = false,
   onClick,
+  variants,
+  custom,
 }) => {
   return (
-    <button
+    <motion.button
+      variants={variants}
+      custom={custom}
+      initial='initial'
+      animate='visible'
       onClick={onClick}
       className={`
       font-nunito
@@ -24,7 +32,7 @@ const Button = ({
             font-bold dark:active:shadow-dark-inset`}
     >
       {children}
-    </button>
+    </motion.button>
   );
 };
 
