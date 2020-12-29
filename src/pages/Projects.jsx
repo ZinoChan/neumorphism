@@ -13,18 +13,18 @@ const Projects = () => {
   };
 
   return (
-    <section className='min-h-screen'>
+    <section className='min-h-screen 2xl:p-0 pt-32'>
       <div className='max-w-screen-2xl relative mx-auto px-6 min-h-screen'>
-        <div className='absolute  top-1/2 transform -translate-y-1/2 w-full'>
+        <div className=' xl:absolute  xl:top-1/2 xl:transform xl:-translate-y-1/2 w-full'>
           <Title variants={slideUp} motion={motion}>
             Projects
           </Title>
 
-          <div className='flex justify-between max-w-screen-md mx-auto mb-10'>
+          <div className='flex justify-between flex-wrap max-w-screen-md  mx-auto mb-10'>
             {["React", "Nextjs", "Gatsbyjs", "Web Design"].map((topic, i) => (
               <Button
                 onClick={() => onTopicClick(topic)}
-                className='dark:text-white'
+                className='dark:text-white md:mb-0 mb-6 md:mx-0 mx-auto'
                 inset={topic === current}
                 variants={slideDown}
                 custom={0.1 * i}
@@ -33,7 +33,7 @@ const Projects = () => {
               </Button>
             ))}
           </div>
-          <div className='grid xl:grid-cols-2 gap-4 max-w-screen-xl mx-auto'>
+          <div className='grid lg:grid-cols-2 gap-8 lg:px-4 xl:px-0 2xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-sm mx-auto'>
             <ProjectCard custom={0.6} />
             <ProjectCard custom={0.7} />
           </div>

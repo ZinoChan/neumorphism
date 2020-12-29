@@ -18,7 +18,7 @@ const ProjectCard = ({ custom }) => {
       custom={custom}
       className='rounded bg-light-theme
      shadow-light-theme dark:bg-dark-theme 
-     dark:shadow-dark-theme p-6'
+     dark:shadow-dark-theme md:p-6 p-2'
     >
       <motion.div
         variants={slideUp}
@@ -48,7 +48,7 @@ const ProjectCard = ({ custom }) => {
         initial='initial'
         animate='visible'
         custom={custom + 0.9}
-        className='rounded p-6 bg-light-theme shadow-light-theme dark:bg-dark-theme dark:shadow-dark-theme mb-6'
+        className='rounded md:p-6 p-2  bg-light-theme shadow-light-theme dark:bg-dark-theme dark:shadow-dark-theme mb-6'
       >
         <img src={run} alt='ecommerce project' className='w-full rounded' />
       </motion.div>

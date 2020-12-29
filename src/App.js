@@ -11,7 +11,7 @@ function App() {
     setDarkTheme(!darkTheme);
   };
   return (
-    <main className='overflow-x-hidden min-h-screen min-w-screen bg-light-theme dark:bg-dark-theme transition-all duration-150'>
+    <main className='overflow-x-hidden min-h-screen min-w-screen bg-light-theme dark:bg-dark-theme '>
       <Header darkTheme={darkTheme} toggleTheme={toggleTheme} />
       <AppRoute darkTheme={darkTheme} />
     </main>

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const Button = ({
   children,
   rounded = "rounded",
-  padding = "px-8 py-3",
+  padding = "md:px-8 md:py-3 sm:px-6 px-4 py-2",
   className = "",
   inset = false,
   onClick,
@@ -21,7 +21,7 @@ const Button = ({
       font-nunito
             focus:outline-none 
            ${rounded} ${padding} 
-            ${className} text-2xl text-dark-theme
+            ${className} md:text-2xl text-md text-dark-theme
             bg-light-theme ${
               inset
                 ? "shadow-light-inset dark:shadow-dark-inset text-main dark:text-main"

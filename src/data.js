@@ -23,3 +23,18 @@ export const socials = [
   { link: "https://github.com/ZinoChan", icon: faInstagram, id: "lkdjozj" },
   { link: "https://github.com/ZinoChan", icon: faTwitter, id: "lkdjozijs" },
 ];
+
+export const skills = [
+  "HTML/CSS",
+  "Javascript",
+  "Typescript",
+  "Reactjs",
+  "Nextjs",
+  "Gatsbyjs",
+  "Redux",
+  "Figma",
+  "Firebase",
+  "Bootstrap",
+  "Tailwindcss",
+  "Webpack",
+];

@@ -13,16 +13,16 @@ import {
 
 function Home({ darkTheme }) {
   return (
-    <section className='relative min-h-screen'>
-      <div className='max-w-screen-2xl mx-auto px-6 min-h-screen'>
-        <div className='grid xl:grid-cols-2 items-center gap-2 absolute top-1/2 transform -translate-y-1/2'>
-          <div className='home-text'>
+    <section className=' min-h-screen xl:pt-0 pt-12'>
+      <div className='2xl:max-w-screen-2xl  mx-auto md:px-6 px-2 min-h-screen relative'>
+        <div className=' w-full grid xl:grid-cols-2 items-center gap-2 absolute left-0 xl:px-6 top-1/2 transform -translate-y-1/2'>
+          <div className='xl:mb-0 mb-10 text-center xl:text-left'>
             <motion.h2
               variants={slideDown}
               initial='initial'
               animate='visible'
               custom={0.3}
-              className='text-4xl font-bold font-nunito dark:text-white text-gray-900 mb-1'
+              className='text-3xl md:text-4xl font-bold font-nunito dark:text-white text-gray-900 mb-1'
             >
               Hi, I'm <span className='text-main'>Zineb</span>
             </motion.h2>
@@ -31,7 +31,7 @@ function Home({ darkTheme }) {
               initial='initial'
               animate='visible'
               custom={0.6}
-              className='text-6xl text-gray-900 dark:text-white mb-4 font-bold font-custom'
+              className='lg:text-6xl md:text-5xl text-4xl  text-gray-900 dark:text-white mb-4 font-bold font-custom'
             >
               Web Developer & <br /> Designer
             </motion.h1>
@@ -40,7 +40,7 @@ function Home({ darkTheme }) {
               initial='initial'
               animate='visible'
               custom={0.7}
-              className='dark:text-gray-50 font-nunito mb-16 text-gray-500'
+              className='md:text-2xl text-xl dark:text-gray-50 font-nunito xl:mb-16 mb-10 text-gray-500'
             >
               Front-end Reactjs Developer
             </motion.p>
@@ -57,7 +57,6 @@ function Home({ darkTheme }) {
             </Link>
           </div>
           <motion.div
-            className='home-img'
             variants={slideToLeft}
             initial='initial'
             animate='visible'
@@ -66,6 +65,7 @@ function Home({ darkTheme }) {
             <img
               src={darkTheme ? darkShape : lightShape}
               alt='web illustration'
+              className='mx-auto'
             />
           </motion.div>
         </div>

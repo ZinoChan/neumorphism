@@ -13,23 +13,26 @@ import { contactInfo } from "../data";
 
 const Contact = () => {
   return (
-    <section className=' min-h-screen'>
+    <section className=' min-h-screen 2xl:pt-0 pt-32'>
       <div className='relative  max-w-screen-2xl mx-auto px-6 min-h-screen'>
-        <div className='absolute  top-1/2 transform -translate-y-1/2 w-full'>
+        <div className='2xl:absolute  2xl:top-1/2 2xl:transform 2xl:-translate-y-1/2 w-full'>
           <Title variants={slideUp} motion={motion}>
             Contact
           </Title>
           <motion.div
             className='rounded bg-light-theme
           shadow-light-theme dark:bg-dark-theme 
-          dark:shadow-dark-theme py-6 px-10 
-          flex justify-between'
+          dark:shadow-dark-theme py-6 md:px-10  
+          flex justify-between flex-wrap'
             variants={slideUp}
             initial='initial'
             animate='visible'
             custom={0.1}
           >
-            <form action='#' className='w-3/5 px-10'>
+            <form
+              action='#'
+              className='lg:w-3/5 w-full md:px-10 px-2 lg:mb-0 mb-20'
+            >
               <Input type='text' label='Your Name :' input={true} />
               <Input type='email' label='Your Email :' input={true} />
               <Input type='text' label='Your Message :' input={false} />
@@ -40,7 +43,7 @@ const Contact = () => {
                 </Button>
               </div>
             </form>
-            <div className='w-2/5 text-center'>
+            <div className='lg:w-2/5 w-full text-center'>
               <h3
                 variants={slideDown}
                 initial='initial'
@@ -66,7 +69,7 @@ const Contact = () => {
                       initial='initial'
                       animate='visible'
                       custom={0.6}
-                      className='text-2xl text-gray-900  dark:text-white'
+                      className='sm:text-2xl text-lg text-gray-900  dark:text-white'
                     >
                       {info.text}
                     </motion.p>
