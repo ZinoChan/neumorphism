@@ -8,7 +8,7 @@ import Theme from "../Theme";
 const NavList = ({ darkTheme, toggleTheme }) => {
   return (
     <>
-      <ul className='flex space-x-6 items-center'>
+      <ul className='lg:flex space-x-6 items-center hidden'>
         <li className='text-2xl text-gray-900 dark:text-gray-100 font-medium font-nunito'>
           <Link to='/'>Home</Link>
         </li>
@@ -22,7 +22,7 @@ const NavList = ({ darkTheme, toggleTheme }) => {
           <Link to='/contact'>Contact</Link>
         </li>
       </ul>
-      <div className='flex'>
+      <div className='hidden lg:flex'>
         <Theme darkTheme={darkTheme} toggleTheme={toggleTheme} />
         <div className='flex ml-10 space-x-6'>
           {socials.map(({ link, icon, id }) => (

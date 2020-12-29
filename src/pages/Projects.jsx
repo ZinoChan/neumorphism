@@ -28,6 +28,7 @@ const Projects = () => {
                 inset={topic === current}
                 variants={slideDown}
                 custom={0.1 * i}
+                key={i * 92}
               >
                 {topic}
               </Button>
