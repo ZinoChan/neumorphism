@@ -30,6 +30,7 @@ module.exports = {
   variants: {
     extend: {
       boxShadow: ["dark", "active"],
+      textColor: ["active"],
     },
   },
   plugins: [],

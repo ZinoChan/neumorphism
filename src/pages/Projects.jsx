@@ -13,8 +13,8 @@ const Projects = () => {
   };
 
   return (
-    <section className='min-h-screen relative'>
-      <div className='max-w-screen-2xl mx-auto px-6 min-h-screen'>
+    <section className='min-h-screen'>
+      <div className='max-w-screen-2xl relative mx-auto px-6 min-h-screen'>
         <div className='absolute  top-1/2 transform -translate-y-1/2 w-full'>
           <Title variants={slideUp} motion={motion}>
             Projects
