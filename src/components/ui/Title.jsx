@@ -5,7 +5,7 @@ const Title = ({ motion, variants, children }) => {
       initial='initial'
       animate='visible'
       custom={0.1}
-      className='text-6xl font-bold font-custom text-main mb-10'
+      className='text-6xl font-bold font-custom text-main mb-6'
     >
       {children}
     </motion.h2>

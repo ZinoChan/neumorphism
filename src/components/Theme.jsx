@@ -6,7 +6,7 @@ const Theme = ({ darkTheme, toggleTheme }) => {
     <span
       onClick={toggleTheme}
       className='
-      absolute bottom-6 left-0 cursor-pointer 
+      cursor-pointer 
       bg-light-theme shadow-light-theme 
       text-dark-theme active:shadow-light-inset 
       dark:active:shadow-dark-inset dark:text-white 

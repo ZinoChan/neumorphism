@@ -20,7 +20,7 @@ const Projects = () => {
             Projects
           </Title>
 
-          <div className='flex justify-between max-w-screen-md mx-auto mb-12'>
+          <div className='flex justify-between max-w-screen-md mx-auto mb-10'>
             {["React", "Nextjs", "Gatsbyjs", "Web Design"].map((topic, i) => (
               <Button
                 onClick={() => onTopicClick(topic)}
