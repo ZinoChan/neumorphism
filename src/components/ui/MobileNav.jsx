@@ -18,7 +18,7 @@ const MobileNav = ({ active, toggleNav }) => {
       ${!active ? "transform translate-x-full" : ""}
       fixed right-0 h-screen top-0
       bg-light-theme z-10
-      transition duration-500 ease-in-out
+      transition duration-150 ease-in-out
      shadow-light-theme dark:bg-dark-theme 
      dark:shadow-dark-theme flex flex-col justify-center 
      align-center w-80  overflow-hidden`}

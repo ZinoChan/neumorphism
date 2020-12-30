@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.react-tiger-transition--container {
-  min-height: 100vh;
-  padding: 0 10px;
+.hamburger-react {
+  z-index: 20;
 }
