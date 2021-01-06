@@ -15,7 +15,7 @@ const Icon = ({ icon, motion, variants }) => {
                   flex items-center justify-center text-xl text-main
                   active:shadow-light-inset dark:active:shadow-dark-inset
                   active:text-dark-theme dark:active:text-white
-                   hover:text-white
+                   hover:text-dark-theme dark:hover:text-white
                   '
     >
       <FontAwesomeIcon icon={icon} />

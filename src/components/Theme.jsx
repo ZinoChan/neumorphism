@@ -10,8 +10,9 @@ const Theme = ({ darkTheme, toggleTheme }) => {
       bg-light-theme shadow-light-theme 
       text-dark-theme active:shadow-light-inset 
       dark:active:shadow-dark-inset dark:text-white 
-      dark:bg-dark-theme dark:shadow-dark-theme p-2 
-      rounded-full md:text-2xl text-lg md:w-12 md:h-12 h-8 w-8 flex items-center justify-center'
+      hover:text-main dark:bg-dark-theme dark:shadow-dark-theme p-2 
+      rounded-full md:text-2xl text-lg md:w-12 md:h-12 h-8 w-8 
+      flex items-center justify-center'
     >
       {darkTheme ? (
         <FontAwesomeIcon icon={faSun} />

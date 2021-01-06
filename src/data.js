@@ -1,7 +1,7 @@
 import {
   faPhone,
   faEnvelope,
-  faLocationArrow,
+  faMapMarkerAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
 import {
@@ -21,7 +21,7 @@ import gamer from "./images/projects/gamer.webp";
 export const contactInfo = [
   { text: "devzinochan@gmail.com", icon: faEnvelope },
   { text: "+212 629872534", icon: faPhone },
-  { text: "Mohammedia, Morocco", icon: faLocationArrow },
+  { text: "Mohammedia, Morocco", icon: faMapMarkerAlt },
 ];
 
 export const socials = [
@@ -111,8 +111,8 @@ export const projects = [
     category: "Nextjs",
     name: "Gamer",
     img: gamer,
-    linkToPage: "#",
-    linkToSrc: "#",
+    linkToPage: "https://zinochan.github.io/dum-page/",
+    linkToSrc: "https://zinochan.github.io/dum-page/",
     description: "gamer accessoiries ecommerce",
     tools: ["nextjs", "framer-motion", "tailwindcss", "firebase", "redux"],
   },
@@ -121,8 +121,8 @@ export const projects = [
     category: "Nextjs",
     name: "recipe",
     img: recipe,
-    linkToPage: "#",
-    linkToSrc: "#",
+    linkToPage: "https://zinochan.github.io/dum-page/",
+    linkToSrc: "https://zinochan.github.io/dum-page/",
     description: "recipe web app ",
     tools: ["nextjs", "framer-motion", "tailwindcss", "firebase"],
   },
