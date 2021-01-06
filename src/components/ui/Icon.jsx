@@ -7,7 +7,7 @@ const Icon = ({ icon, motion, variants }) => {
       initial='initial'
       animate='visible'
       custom={0.6}
-      className=' cursor-pointer
+      className='relative cursor-pointer
                   inline-blobk relative 
                    w-12 h-12 rounded-full bg-light-theme 
                    shadow-light-theme 
@@ -15,6 +15,7 @@ const Icon = ({ icon, motion, variants }) => {
                   flex items-center justify-center text-xl text-main
                   active:shadow-light-inset dark:active:shadow-dark-inset
                   active:text-dark-theme dark:active:text-white
+                   hover:text-white
                   '
     >
       <FontAwesomeIcon icon={icon} />

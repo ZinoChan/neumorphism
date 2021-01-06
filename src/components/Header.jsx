@@ -16,9 +16,6 @@ const Header = ({ darkTheme, toggleTheme }) => {
       <div className='max-w-screen-2xl mx-auto px-6'>
         <nav className='flex items-center justify-between'>
           <div className='logo'>
-            {/* <h1 className='text-3xl font-bold font-custom text-dark-theme dark:text-light-theme'>
-              Zinochan
-            </h1> */}
             <img
               src={darkTheme ? darkLogo : lightLogo}
               alt='logo'
@@ -30,14 +27,7 @@ const Header = ({ darkTheme, toggleTheme }) => {
 
           <div className='flex space-x-6 items-center lg:hidden'>
             <Theme darkTheme={darkTheme} toggleTheme={toggleTheme} />
-            {/* <div
-              onClick={toggleNav}
-              className='flex flex-col md:space-y-2 space-y-1 relative z-20'
-            >
-              <span className='md:w-10 w-8 h-1 bg-main rounded'></span>
-              <span className='md:w-10 w-8 h-1 bg-main rounded'></span>
-              <span className='md:w-10 w-8 h-1 bg-main rounded'></span>
-            </div> */}
+
             <Hamburger color='#D5668A' toggled={isOpen} toggle={setOpen} />
             <MobileNav active={isOpen} toggleNav={toggleNav} />
           </div>

@@ -1,17 +1,10 @@
 import { Link } from "react-router-dom";
-import { socials } from "../../data";
-import Icon from "./Icon";
-import { motion } from "framer-motion";
-import { slideDown } from "../../utils/motionVariants";
+
+import { navItems } from "../../data";
+
+import SocialNav from "../../components/ui/SocialNav";
 
 const MobileNav = ({ active, toggleNav }) => {
-  const navItems = [
-    { link: "/", text: "Home" },
-    { link: "/projects", text: "Projects" },
-    { link: "/about", text: "About" },
-    { link: "/contact", text: "Contact" },
-  ];
-
   return (
     <div
       className={`
@@ -24,24 +17,18 @@ const MobileNav = ({ active, toggleNav }) => {
      align-center w-80  overflow-hidden`}
     >
       <ul className=' space-y-10 mb-10 text-center'>
-        {navItems.map(({ link, text }) => (
+        {navItems.map((item, i) => (
           <li
             onClick={toggleNav}
-            key={link}
+            key={`nav-link-${i}`}
             className='text-2xl text-gray-900 dark:text-gray-100 font-medium font-nunito'
           >
-            <Link to={link}>{text}</Link>
+            <Link to={item.link}>{item.title}</Link>
           </li>
         ))}
       </ul>
       <div className='flex'>
-        <div className='flex ml-10 space-x-6'>
-          {socials.map(({ link, icon, id }) => (
-            <a href={link} key={id}>
-              <Icon icon={icon} motion={motion} variants={slideDown} />
-            </a>
-          ))}
-        </div>
+        <SocialNav />
       </div>
     </div>
   );

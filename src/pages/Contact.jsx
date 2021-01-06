@@ -13,7 +13,7 @@ import { contactInfo } from "../data";
 
 const Contact = () => {
   return (
-    <section className=' min-h-screen 2xl:pt-0 pt-32'>
+    <section className=' min-h-screen 2xl:pt-0 pt-32 overflow-hidden'>
       <div className='relative  max-w-screen-2xl mx-auto px-6 min-h-screen'>
         <div className='2xl:absolute  2xl:top-1/2 2xl:transform 2xl:-translate-y-1/2 w-full'>
           <Title variants={slideUp} motion={motion}>
@@ -54,9 +54,9 @@ const Contact = () => {
                 Contact Informations
               </h3>
               <div className='max-w-min mx-auto'>
-                {contactInfo.map((info) => (
+                {contactInfo.map((info, i) => (
                   <div
-                    key={info.id}
+                    key={`info-${i}`}
                     className='flex space-x-6  items-center mb-6'
                   >
                     <Icon
