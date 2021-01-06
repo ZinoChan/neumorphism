@@ -20,7 +20,6 @@ const Projects = () => {
   return (
     <section className='overflow-hidden pt-32 pb-20'>
       <div className='max-w-screen-2xl relative mx-auto px-6 '>
-        {/* <div className=' xl:absolute  xl:top-1/2 xl:transform xl:-translate-y-1/2 w-full'> */}
         <div>
           <Title variants={slideUp} motion={motion}>
             Projects

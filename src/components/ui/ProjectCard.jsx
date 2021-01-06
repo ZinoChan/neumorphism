@@ -1,5 +1,4 @@
 import CardCircle from "./CardCircle";
-import run from "../../images/run.jpg";
 import Button from "./Button";
 import { motion } from "framer-motion";
 import {

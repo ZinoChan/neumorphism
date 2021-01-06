@@ -3,8 +3,7 @@ import { useState } from "react";
 import MobileNav from "./ui/MobileNav";
 import Theme from "./Theme";
 import { Squash as Hamburger } from "hamburger-react";
-import darkLogo from "../images/dark_logo.svg";
-import lightLogo from "../images/light_logo.svg";
+import logo from "../images/logo.svg";
 
 const Header = ({ darkTheme, toggleTheme }) => {
   const [isOpen, setOpen] = useState(false);
@@ -16,11 +15,7 @@ const Header = ({ darkTheme, toggleTheme }) => {
       <div className='max-w-screen-2xl mx-auto px-6'>
         <nav className='flex items-center justify-between'>
           <div className='logo'>
-            <img
-              src={darkTheme ? darkLogo : lightLogo}
-              alt='logo'
-              className='w-28'
-            />
+            <img src={logo} alt='logo' className=' h-16' />
           </div>
 
           <NavList darkTheme={darkTheme} toggleTheme={toggleTheme} />
