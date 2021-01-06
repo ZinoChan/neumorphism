@@ -30,7 +30,7 @@ const Contact = () => {
             custom={0.1}
           >
             <form
-              action='#'
+              onSubmit={(e) => e.preventDefault()}
               className='lg:w-3/5 w-full md:px-10 px-2 lg:mb-0 mb-20'
             >
               <Input type='text' label='Your Name :' input={true} />
