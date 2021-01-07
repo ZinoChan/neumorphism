@@ -29,19 +29,22 @@ const ProjectCard = ({ custom, img, name, linkToPage, linkToSrc }) => {
       dark:bg-dark-theme dark:shadow-dark-theme p-2 mb-4'
       >
         <CardCircle
-          color='red-400'
+          borderColor='border-red-400'
+          bgColor='bg-red-400'
           slideToLeft={slideToLeft}
           motion={motion}
           custom={custom + 0.2}
         />
         <CardCircle
-          color='yellow-300'
+          borderColor='border-yellow-300'
+          bgColor='bg-yellow-300'
           slideToLeft={slideToLeft}
           motion={motion}
           custom={custom + 0.2}
         />
         <CardCircle
-          color='green-500'
+          borderColor='border-green-500'
+          bgColor='bg-green-500'
           slideToLeft={slideToLeft}
           motion={motion}
           custom={custom + 0.2}
