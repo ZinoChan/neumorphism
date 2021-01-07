@@ -8,6 +8,8 @@ import {
   slideToRight,
 } from "../../utils/motionVariants";
 
+import Img from "react-cool-img";
+
 const ProjectCard = ({ custom, img, name, linkToPage, linkToSrc }) => {
   return (
     <motion.div
@@ -66,10 +68,16 @@ const ProjectCard = ({ custom, img, name, linkToPage, linkToSrc }) => {
         className='rounded md:p-6 p-2  bg-light-theme 
         shadow-light-theme dark:bg-dark-theme dark:shadow-dark-theme mb-4'
       >
-        <img
+        {/* <img
           src={img}
           alt='project'
           className='w-full rounded 2xl:h-80 lg:h-72'
+        /> */}
+        <Img
+          className='w-full rounded 2xl:h-80 lg:h-72'
+          style={{ backgroundColor: "grey", width: "480", height: "312" }}
+          src={img}
+          alt='project'
         />
       </motion.div>
       <div className='flex justify-between items-center'>
