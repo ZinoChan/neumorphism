@@ -11,12 +11,12 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 
-import sushio from "./images/projects/sushio.webp";
-import perfume from "./images/projects/perfume.webp";
-import jagaimo from "./images/projects/jagaimo.webp";
-import run from "./images/projects/run.webp";
-import recipe from "./images/projects/recipe.webp";
-import gamer from "./images/projects/gamer.webp";
+import sushio from "./images/projects/sushio.jpg";
+import perfume from "./images/projects/perfume.jpg";
+import jagaimo from "./images/projects/jagaimo.jpg";
+import run from "./images/projects/run.jpg";
+import recipe from "./images/projects/recipe.jpg";
+import gamer from "./images/projects/gamer.jpg";
 
 export const contactInfo = [
   { text: "devzinochan@gmail.com", icon: faEnvelope },

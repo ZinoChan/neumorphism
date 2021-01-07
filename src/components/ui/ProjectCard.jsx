@@ -2,7 +2,7 @@ import CardCircle from "./CardCircle";
 import Button from "./Button";
 import { motion } from "framer-motion";
 import {
-  zoomIn,
+  fadeIn,
   slideUp,
   slideToLeft,
   slideToRight,
@@ -28,19 +28,25 @@ const ProjectCard = ({ custom, img, name, linkToPage, linkToSrc }) => {
       bg-light-theme shadow-light-theme 
       dark:bg-dark-theme dark:shadow-dark-theme p-2 mb-4'
       >
-        {[
-          { color: "red-400", id: 0.2 },
-          { color: "yellow-300", id: 0.3 },
-          { color: "green-500", id: 0.4 },
-        ].map(({ color, id }) => (
-          <CardCircle
-            color={color}
-            slideToLeft={slideToLeft}
-            motion={motion}
-            custom={custom + id}
-            key={id}
-          />
-        ))}
+        <CardCircle
+          color='red-400'
+          slideToLeft={slideToLeft}
+          motion={motion}
+          custom={custom + 0.2}
+        />
+        <CardCircle
+          color='yellow-300'
+          slideToLeft={slideToLeft}
+          motion={motion}
+          custom={custom + 0.2}
+        />
+        <CardCircle
+          color='green-500'
+          slideToLeft={slideToLeft}
+          motion={motion}
+          custom={custom + 0.2}
+        />
+
         <h4
           className='dark:text-white text-dark-theme 
         text-2xl font-bold font-custom 
@@ -50,14 +56,18 @@ const ProjectCard = ({ custom, img, name, linkToPage, linkToSrc }) => {
         </h4>
       </motion.div>
       <motion.div
-        variants={zoomIn}
+        variants={fadeIn}
         initial='initial'
         animate='visible'
         custom={custom + 0.9}
         className='rounded md:p-6 p-2  bg-light-theme 
         shadow-light-theme dark:bg-dark-theme dark:shadow-dark-theme mb-4'
       >
-        <img src={img} alt='project' className='w-full rounded' />
+        <img
+          src={img}
+          alt='project'
+          className='w-full rounded 2xl:h-80 lg:h-72'
+        />
       </motion.div>
       <div className='flex justify-between items-center'>
         <Button

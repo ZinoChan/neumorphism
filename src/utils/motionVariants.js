@@ -74,3 +74,18 @@ export const zoomIn = {
     },
   }),
 };
+
+export const fadeIn = {
+  initial: { opacity: 0 },
+  visible: (i) => ({
+    opacity: 1,
+
+    transition: {
+      type: "spring",
+      stiffness: 100,
+      mass: 0.5,
+      duration: 2,
+      delay: i,
+    },
+  }),
+};
