@@ -15,11 +15,11 @@ import { skills } from "../data";
 const About = ({ darkTheme }) => {
   return (
     <section
-      className='relative min-h-screen bg-right bg-right bg-no-repeat 2xl:pt-0 pt-40'
+      className='relative overflow-x-hidden  bg-right bg-right bg-no-repeat  pt-32'
       style={{ backgroundImage: `url(${darkTheme ? darkBg : lightBg})` }}
     >
-      <div className='max-w-screen-2xl mx-auto px-6 min-h-screen'>
-        <div className='xl:absolute  xl:top-1/2 xl:transform xl:-translate-y-1/2 w-full'>
+      <div className='max-w-screen-2xl mx-auto px-6'>
+        <div >
           <Title variants={slideUp} motion={motion}>
             About
           </Title>

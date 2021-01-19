@@ -11,9 +11,9 @@ module.exports = {
       },
 
       colors: {
-        "dark-theme": "#121E34",
+        "dark-theme": "#131419",
         "light-theme": "#EBF2FA",
-        main: "#D5668A",
+        main: "#03A9F4",
       },
       boxShadow: {
         "dark-theme":
@@ -24,13 +24,15 @@ module.exports = {
           "-4px -4px 16px 0 #fff, 4px 4px 10px 0 rgba(95, 157, 231,.48)",
         "light-inset":
           "-4px -4px 16px 0 #fff inset, 4px 4px 10px 0 rgba(95, 157, 231,.48) inset",
+        
       },
     },
   },
   variants: {
     extend: {
-      boxShadow: ["dark", "active"],
-      textColor: ["active"],
+      boxShadow: ["dark", "active", "hover"],
+      textColor: ["active", "hover"],
+
     },
   },
   plugins: [],

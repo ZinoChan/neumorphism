@@ -13,7 +13,7 @@ import { contactInfo } from "../data";
 
 const Contact = () => {
   return (
-    <section className=' min-h-screen 2xl:pt-0 pt-32 overflow-hidden'>
+    <section className='overflow-x-hidden min-h-screen 2xl:pt-10 pt-32 overflow-hidden'>
       <div className='relative  max-w-screen-2xl mx-auto px-6 min-h-screen'>
         <div className='2xl:absolute  2xl:top-1/2 2xl:transform 2xl:-translate-y-1/2 w-full'>
           <Title variants={slideUp} motion={motion}>
