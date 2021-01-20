@@ -13,9 +13,9 @@ import {
 
 function Home({ darkTheme }) {
   return (
-    <section className='overflow-x-hidden min-h-screen xl:pt-10 pt-20'>
-      <div className='2xl:max-w-screen-2xl  mx-auto md:px-6 px-2 min-h-screen relative'>
-        <div className=' w-full grid xl:grid-cols-2 items-center gap-2 absolute left-0 xl:px-6 top-1/2 transform -translate-y-1/2'>
+    <section className='overflow-x-hidden min-h-screen flex items-center'>
+      <div className='2xl:max-w-screen-2xl  mx-auto md:px-6 px-2 relative'>
+        <div className=' w-full grid xl:grid-cols-2 items-center gap-2 '>
           <div className='xl:mb-0 mb-10 text-center xl:text-left'>
             <motion.h2
               variants={slideDown}
