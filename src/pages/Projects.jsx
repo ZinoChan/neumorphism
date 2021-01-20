@@ -41,9 +41,9 @@ const Projects = () => {
           </div>
           <div
             className='grid lg:grid-cols-2 
-          gap-8 lg:px-4 xl:px-0 
+          gap-8 
           2xl:max-w-screen-xl 
-          lg:max-w-screen-lg md:max-w-screen-sm mx-auto'
+          lg:max-w-screen-lg md:max-w-screen-sm mx-auto overflow-hidden p-6'
           >
             {currentProjects.map((project, i) => (
               <ProjectCard

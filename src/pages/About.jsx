@@ -15,7 +15,7 @@ import { skills } from "../data";
 const About = ({ darkTheme }) => {
   return (
     <section
-      className='relative overflow-x-hidden  bg-right bg-right bg-no-repeat  pt-10'
+      className='relative overflow-x-hidden  bg-right bg-right bg-no-repeat  py-16'
       style={{ backgroundImage: `url(${darkTheme ? darkBg : lightBg})` }}
     >
       <div className='max-w-screen-2xl mx-auto px-6'>

@@ -13,9 +13,9 @@ import { contactInfo } from "../data";
 
 const Contact = () => {
   return (
-    <section className='overflow-x-hidden pt-20 '>
+    <section className='pt-20 '>
       <div className='max-w-screen-2xl mx-auto px-6 '>
-        <div className="w-full">
+        <div className="w-full py-6">
           <Title variants={slideUp} motion={motion}>
             Contact
           </Title>
@@ -23,7 +23,7 @@ const Contact = () => {
             className='rounded bg-light-theme
           shadow-light-theme dark:bg-dark-theme 
           dark:shadow-dark-theme py-6 md:px-10  
-          flex justify-between flex-wrap'
+          flex justify-between flex-wrap overflow-y-hidden'
             variants={slideUp}
             initial='initial'
             animate='visible'
