@@ -43,7 +43,7 @@ const Projects = () => {
             className='grid lg:grid-cols-2 
           gap-8 
           2xl:max-w-screen-xl 
-          lg:max-w-screen-lg md:max-w-screen-sm mx-auto overflow-hidden p-6'
+          lg:max-w-screen-lg md:max-w-screen-sm mx-auto overflow-hidden md:p-6 p-2'
           >
             {currentProjects.map((project, i) => (
               <ProjectCard
